@@ -1,14 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/dekstop.css">
-    <link rel="stylesheet" href="./css/tab.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <title>Wisata</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> WanderWave</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">WanderWave</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#package">PACKAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>ELEVATE YOUR TRAVEL JOURNEY</p>
+          <h1>Rasakan Kenikmatan Wisata Indonesia !</h1>
+          <div class="header__btns">
+            <button class="btn">Book A Trip Now</button>
+            <a href="#">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__image">
+          <!-- <img src="assets/header.png" alt="header" /> -->
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Destinasi Populer</h2>
+      <p class="section__description">
+        Temukan Destinasi Paling Disukai di Seluruh Indonesia
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/sunset-rajaampat-web.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Raja Ampat</h4>
+              <p>Papua Barat, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pulau Maldives</h4>
+              <p>Kalimantan Timur, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pantai Ora</h4>
+              <p>Maluku, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+        <h2 class="section__header">Petualangan Pantai yang Tak Terlupakan!</h2>
+        <p class="section__description">
+          Perencanaan Mudah untuk Liburan Pantai Anda Berikutnya
+        </p>
+        <div class="journey__grid">
+          <div class="journey__card">
+            <div class="journey__card__bg">
+              <span><i class="ri-bookmark-3-line"></i></span>
+              <h4>Proses Pemesanan yang Mudah</h4>
+            </div>
+            <div class="journey__card__content">
+              <span><i class="ri-bookmark-3-line"></i></span>
+              <h4>Pemesanan Mudah, Hanya Sekali Klik</h4>
+              <p>
+                Dari penerbangan dan akomodasi hingga aktivitas dan transfer, semua yang Anda butuhkan tersedia di ujung jari Anda, membuat perencanaan perjalanan pantai menjadi sangat mudah.
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card__bg">
+              <span><i class="ri-landscape-fill"></i></span>
+              <h4>Menyesuaikan Rencana</h4>
+            </div>
+            <div class="journey__card__content">
+              <span><i class="ri-landscape-fill"></i></span>
+              <h4>Rencana Khusus untuk Anda</h4>
+              <p>
+                Nikmati rencana perjalanan yang dipersonalisasi sesuai dengan preferensi dan minat Anda. Apakah Anda mencari petualangan atau pengalaman budaya, rencana perjalanan kami memastikan liburan pantai Anda unik dan sesuai keinginan.
+              </p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card__bg">
+              <span><i class="ri-map-2-line"></i></span>
+              <h4>Wawasan Lokal dari Ahli</h4>
+            </div>
+            <div class="journey__card__content">
+              <span><i class="ri-map-2-line"></i></span>
+              <h4>Tips dan Rekomendasi dari Lokal</h4>
+              <p>
+                Kami menyediakan rekomendasi terkurasi untuk bersantap, sightseeing, dan tempat tersembunyi, sehingga Anda dapat merasakan setiap destinasi seperti seorang lokal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>Aktivitas Outdoor Tanpa Batas</h4>
+        <p>
+            Mulailah petualangan pantai yang tak terlupakan di destinasi impian Anda. Nikmati liburan yang sesuai dengan keinginan Anda, mulai dari menikmati pantai yang tenang, menjelajahi keindahan bawah laut, hingga menyaksikan matahari terbenam yang memukau. Kami menyediakan destinasi yang dipilih dengan cermat dan rencana perjalanan yang dipersonalisasi, memastikan setiap perjalanan pantai sesuai dengan preferensi Anda. Temukan tempat tersembunyi, tenggelam dalam budaya lokal, dan ciptakan kenangan yang tak terlupakan.
+          </p>
+          <p>
+            Dengan panduan dan wawasan lokal kami, menjelajahi keajaiban pantai menjadi lebih mudah. Dapatkan tips dan informasi untuk menjelajahi tempat baru dengan percaya diri. Dari perencanaan awal hingga kepulangan, kami berkomitmen untuk memastikan pengalaman liburan pantai Anda mulus dan memuaskan.
+          </p>
+      </div>
+    </section>
+
+   
+
+    <section class="section__container discover__container">
+        <h2 class="section__header">Jelajahi Keindahan Pantai dari Ketinggian</h2>
+        <p class="section__description">
+          Rasakan Pesona Pantai dan Perspektif Unik
+        </p>
+        <div class="discover__grid">
+          <div class="discover__card">
+            <span><i class="ri-camera-lens-line"></i></span>
+            <h4>Pesona Pantai dari Udara</h4>
+            <p>
+              Nikmati keindahan pantai dan garis pantai yang menakjubkan dari udara, menawarkan perspektif yang tak terlupakan.
+            </p>
+          </div>
+          <div class="discover__card">
+            <span><i class="ri-ship-line"></i></span>
+            <h4>Kekayaan Alam Pantai</h4>
+            <p>
+              Jelajahi pantai yang masih alami, air laut yang jernih, serta terumbu karang yang berwarna-warni dari ketinggian.
+            </p>
+          </div>
+          <div class="discover__card">
+            <span><i class="ri-landscape-line"></i></span>
+            <h4>Keajaiban Alam dan Tempat Tersembunyi</h4>
+            <p>
+              Saksikan keajaiban alam dan tempat-tempat tersembunyi yang mungkin tidak terlihat dari darat, menawarkan pengalaman yang unik.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Testimoni</h2>
+      <p class="section__description">
+        Temukan kisah-kisah petualangan dan kenangan berharga melalui sudut pandang klien kami yang berharga.
+      </p>
+      <!-- Slider main container -->
+     <!-- Swiper -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="client__card">
+          <div class="client__content">
+            <div class="client__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <p>
+              Pengalaman liburan pantai saya benar-benar mengesankan. Dari menemukan pantai tersembunyi yang menakjubkan hingga menikmati matahari terbenam yang memukau, setiap detail perjalanan diatur dengan sempurna. Saya sangat merekomendasikan pengalaman pantai ini kepada siapa saja yang ingin merasakan liburan pantai yang istimewa!
+            </p>
+          </div>
+          <div class="client__details">
+            <img src="assets/profile.png" alt="client" />
+            <div>
+              <h4>John Adams</h4>
+              <h5>Travel Blogger</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client__card">
+          <div class="client__content">
+            <div class="client__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <p>
+              Petualangan pantai saya baru-baru ini sangat luar biasa. Rencana perjalanan yang dipersonalisasi dan rekomendasi yang diberikan membawa saya ke lokasi-lokasi pantai yang menakjubkan yang tidak akan saya temukan sendiri. Saya sudah merencanakan liburan pantai berikutnya!
+            </p>
+          </div>
+          <div class="client__details">
+            <img src="assets/client-2.jpg" alt="client" />
+            <div>
+              <h4>Emily Thompson</h4>
+              <h5>Adventure Enthusiast</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client__card">
+          <div class="client__content">
+            <div class="client__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <p>
+              Pengalaman saya menjelajahi pantai untuk penelitian sangat mengesankan. Perspektif unik dari udara memberikan apresiasi baru terhadap keindahan pantai yang saya pelajari. Saya sangat merekomendasikan pengalaman ini kepada sesama peneliti dan pecinta budaya.
+            </p>
+          </div>
+          <div class="client__details">
+            <img src="assets/client-3.jpg" alt="client" />
+            <div>
+              <h4>Sarah Lee</h4>
+              <h5>Cultural Historian</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client__card">
+          <div class="client__content">
+            <div class="client__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <p>
+              Menemukan keseimbangan antara pekerjaan dan liburan pantai bisa menantang, tetapi semuanya terasa mudah. Perencanaan yang efisien dan rekomendasi yang luar biasa membantu saya memaksimalkan waktu santai dan menikmati setiap momen perjalanan. Saya menantikan untuk bekerja sama lagi pada perjalanan pantai berikutnya.
+            </p>
+          </div>
+          <div class="client__details">
+            <img src="assets/client-4.jpg" alt="client" />
+            <div>
+              <h4>David Patel</h4>
+              <h5>Business Executive</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  
+      
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">WanderWave</a>
+          </div>
+          <p>
+            Jelajahi keindahan pantai dengan mudah dan penuh kegembiraan melalui platform perjalanan kami yang komprehensif. Perjalanan Anda dimulai di sini, di mana perencanaan yang mulus bertemu dengan pengalaman pantai yang tak terlupakan.
+          </p>          
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +62 858-4845-6768
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@WanderWave
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Jawa Tengah, Indonesia
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
